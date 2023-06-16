@@ -1,0 +1,56 @@
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--bs-gray-800);
+  }
+  
+  .clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    border: 1% solid  #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .time {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .date {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .alarm input[type="time"] {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .alarm button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .stopwatch {
+    margin-top: 20px;
+  }
+  
+  #stopwatchTime {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .stopwatch button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  

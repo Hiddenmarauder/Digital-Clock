@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wall Clock</title>
+  <link rel="stylesheet" type="text/css" href="wall-clock.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<body class="bg-black bg-gradient ">
+  <div class="clock-container shadow-lg container-fluid container-lg  ">
+    <div class="clock bg-transparent  container-fluid shadow-lg bg-gradient">
+      <div class="time text-success" id="time"></div>
+      <div class="date text-success " id="date"></div>
+      <div class="alarm card-body ">
+        <input type="time" id="alarmTime">
+        <button class="btn  btn-outline-primary" onclick="setAlarm()">Set Alarm</button>
+        <button class="btn btn-outline-warning" onclick="playAlarmSound()">Test Alarm</button>
+      </div>
+      <div class="stopwatch text-warning">
+        <div id="stopwatchTime">00:00:00</div>
+        <button class="btn btn-outline-light" onclick="startStopwatch()">Start</button>
+        <button class="btn btn-outline-warning text-white-50" onclick="stopStopwatch()">Stop</button>
+        <button  class="btn btn-outline-primary" onclick="resetStopwatch()">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="wall-clock.js"></script>
+ 
+</body>
+</html>
